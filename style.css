@@ -392,7 +392,7 @@ nav a:hover {
 }
 
 .banner-content {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 30px;
   border-radius: 10px;
 }
@@ -564,39 +564,10 @@ nav a:hover {
     }
   }
 
-      /* Global font color */
-      body {
-        color: #ffffff; /* White font for dark background */
-        background-color: #000000; /* Example dark background */
-        font-family: Arial, sans-serif;
-      }
-  
-      /* Headings */
-      h1, h2, h3 {
-        color: #ffa500; /* Orange */
-      }
-  
-      /* Paragraphs */
-      p {
-        color: #f0f0f0; /* Light gray */
-      }
-  
-      /* Links */
-      a {
-        color: #00ffff; /* Cyan */
-        text-decoration: none;
-      }
-  
-      a:hover {
-        color: #ff69b4; /* Hot pink on hover */
-      }
-  
-      /* Product names */
-      .product p {
-        color: #ffffff;
-      }
-  
-      /* Footer */
-      footer p {
-        color: #aaaaaa;
-      }
+
+
+    /* Product names */
+    .product p {
+      color: #dabcbc;
+    }
+
