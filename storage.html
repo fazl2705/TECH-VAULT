@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage Devices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Storage Devices</h2>
+
+      <div class="product">
+        <img src="Images/samsung 970 EVO Plus.jpg" alt="Samsung 970 EVO Plus">
+        <p>Samsung 970 EVO Plus 1TB NVMe</p>
+        <p class="price">$100</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Samsung 970 EVO Plus 1TB NVMe', 100, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Samsung 970 EVO Plus 1TB NVMe')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/WD Black SN850 1TB NVMe.png" alt="WD Black SN850">
+        <p>WD Black SN850 1TB NVMe</p>
+        <p class="price">$130</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('WD Black SN850 1TB NVMe', 130, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('WD Black SN850 1TB NVMe')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Crucial MX500 1TB SATA SSD.webp" alt="Crucial MX500">
+        <p>Crucial MX500 1TB SATA SSD</p>
+        <p class="price">$85</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Crucial MX500 1TB SATA SSD', 85, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Crucial MX500 1TB SATA SSD')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Seagate Barracuda 2TB HDD.jpg" alt="Seagate Barracuda 2TB">
+        <p>Seagate Barracuda 2TB HDD</p>
+        <p class="price">$50</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Seagate Barracuda 2TB HDD', 50, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Seagate Barracuda 2TB HDD')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/WD Blue 1TB HDD.webp" alt="WD Blue 1TB">
+        <p>WD Blue 1TB HDD</p>
+        <p class="price">$40</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('WD Blue 1TB HDD', 40, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('WD Blue 1TB HDD')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Sabrent Rocket Q 2TB NVMe.jpg" alt="Sabrent Rocket Q 2TB">
+        <p>Sabrent Rocket Q 2TB NVMe</p>
+        <p class="price">$180</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Sabrent Rocket Q 2TB NVMe', 180, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Sabrent Rocket Q 2TB NVMe')">Add to Favourites</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Computer Parts Shop</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

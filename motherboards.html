@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motherboards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Motherboards</h2>
+
+      <div class="product">
+        <img src="Images/asus prime B450M.jpg" alt="Motherboard 1">
+        <p>ASUS Prime B450M</p>
+        <p class="price">$100</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ASUS Prime B450M', 100, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ASUS Prime B450M')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Gigabyte B550 AORUS.jpeg" alt="Motherboard 2">
+        <p>Gigabyte B550 AORUS</p>
+        <p class="price">$150</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Gigabyte B550 AORUS', 150, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Gigabyte B550 AORUS')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/MSI MAG Z490.png" alt="Motherboard 3">
+        <p>MSI MAG Z490</p>
+        <p class="price">$120</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('MSI MAG Z490', 120, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('MSI MAG Z490')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/ASRock X570 Phantom.png" alt="Motherboard 4">
+        <p>ASRock X570 Phantom</p>
+        <p class="price">$180</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ASRock X570 Phantom', 180, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ASRock X570 Phantom')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/ASUS ROG Strix Z790.jpg" alt="Motherboard 5">
+        <p>ASUS ROG Strix Z790</p>
+        <p class="price">$250</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ASUS ROG Strix Z790', 250, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ASUS ROG Strix Z790')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Gigabyte Z690 AORUS.jpeg" alt="Motherboard 6">
+        <p>Gigabyte Z690 AORUS</p>
+        <p class="price">$300</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Gigabyte Z690 AORUS', 300, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Gigabyte Z690 AORUS')">Add to Favourites</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Computer Parts Shop</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+

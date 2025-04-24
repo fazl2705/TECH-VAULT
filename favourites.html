@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Favourites</title>
+  <style>
+    .favourites-list {
+      list-style-type: disc;
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    .favourites-list li {
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Favourites</h2>
+    <button onclick="applyFavourites()">Show Favourites</button>
+    <div id="favourites-list"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Computer Parts Shop</p>
+  </footer>
+
+  <script>
+    function applyFavourites() {
+      const container = document.getElementById("favourites-list");
+      container.innerHTML = ""; // Clear any existing content
+
+      const favourites = JSON.parse(localStorage.getItem("favourites")) || [];
+
+      if (favourites.length === 0) {
+        container.innerHTML = "<p>No favourites selected.</p>";
+        return;
+      }
+
+      const ul = document.createElement("ul");
+      ul.className = "favourites-list";
+
+      favourites.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        ul.appendChild(li);
+      });
+
+      container.appendChild(ul);
+    }
+  </script>
+   <script src="main.js"></script>
+  </body>
+  </html>
+
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Processors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Processors</h2>
+
+      <div class="product">
+        <img src="Images/Intel i5 12400F.jpg" alt="Intel i5 12400F">
+        <p>Intel Core i5-12400F</p>
+        <p class="price">$180</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Intel Core i5-12400F', 180, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Intel Core i5-12400F')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Intel-Core-i7-13700K-Processor.webp" alt="Intel i7 13700K">
+        <p>Intel Core i7-13700K</p>
+        <p class="price">$390</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Intel Core i7-13700K', 390, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Intel Core i7-13700K')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Intel Core i9-13900K.jpg" alt="Intel i9 13900K">
+        <p>Intel Core i9-13900K</p>
+        <p class="price">$580</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Intel Core i9-13900K', 580, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Intel Core i9-13900K')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/AMD Ryzen 5 5600X.webp" alt="AMD Ryzen 5 5600X">
+        <p>AMD Ryzen 5 5600X</p>
+        <p class="price">$170</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('AMD Ryzen 5 5600X', 170, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('AMD Ryzen 5 5600X')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/AMD Ryzen 7 5800X.jpg" alt="AMD Ryzen 7 5800X">
+        <p>AMD Ryzen 7 5800X</p>
+        <p class="price">$320</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('AMD Ryzen 7 5800X', 320, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('AMD Ryzen 7 5800X')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/AMD Ryzen 9 7900X.png" alt="AMD Ryzen 9 7900X">
+        <p>AMD Ryzen 9 7900X</p>
+        <p class="price">$430</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('AMD Ryzen 9 7900X', 430, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('AMD Ryzen 9 7900X')">Add to Favourites</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Computer Parts Shop</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+

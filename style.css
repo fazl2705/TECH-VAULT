@@ -1,0 +1,602 @@
+/* Background Image for the Body */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(Images/back\ g.jpg); /* Add your image path here */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  margin: 0;
+  padding-top: 60px;
+  transition: background-color 0.5s ease;
+  color: #fff;
+}
+
+/* Header */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4CAF50;
+}
+
+nav a.active {
+  color: #4CAF50;
+  font-weight: bold;
+  border-bottom: 2px solid #4CAF50;
+}
+
+/* Main Content */
+main {
+  margin-top: 70px;
+}
+
+/* Center the Memory heading */
+.product-list h2 {
+  text-align: center; /* Center the text */
+  margin-top: 20px;   /* Add some margin on top for spacing */
+  font-size: 2.5em;   /* Optional: Change font size */
+  color: #fff;        /* Optional: Set text color */
+}
+
+/* Banner Section */
+.intro {
+  text-align: center;
+  padding: 0;
+  position: relative;
+}
+
+.intro-image-wrapper {
+  width: 100%;
+  height: 25vh;
+  overflow: hidden;
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.intro h1 {
+  font-size: 3em;
+  margin-top: 30px;
+  color: #fff;
+  z-index: 1;
+  position: relative;
+}
+
+.intro p {
+  font-size: 1.2em;
+  color: #fff;
+  margin-top: 10px;
+  z-index: 1;
+  position: relative;
+}
+
+/* Product Section */
+.product-list {
+  padding: 0 2rem;
+  text-align: center;
+  animation: slideUp 1s ease-out;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+@media (max-width: 900px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Product Card */
+.product {
+  background-color: #000000;
+  padding: 1rem;
+  width: 100%;
+  max-width: 200px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+}
+
+.product:hover {
+  background-color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 120px;
+  background-color: #ffffff;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  border-radius: 5px;
+}
+
+.product img:hover {
+  transform: scale(1.1);
+}
+
+.product p {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+/* Price Styling */
+.product .price {
+  color: #2e8b57;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Quantity Selector */
+.quantity-selector {
+  width: 50px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.quantity-selector:focus {
+  background-color: #e8f5e9;
+  outline: none;
+}
+
+/* Button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 3px;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid #4CAF50;
+  outline-offset: 2px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+  /* Footer */
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+  }
+
+  footer p {
+    font-size: 0.9em;
+    color: #ccc;
+    margin: 0;
+  }
+
+/* Favourites List */
+.favourites-list {
+  list-style-type: disc;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.favourites-list li {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* === Additional Product Showcase on Home Page === */
+.products-home {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 20px;
+  flex-wrap: wrap;
+  animation: slideUp 1s ease-out;
+}
+
+.products-home .product {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.973);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.products-home .product:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+.products-home .product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.products-home .product p {
+  color: #ffffff;
+  font-weight: bold;
+  margin-top: 5px;
+}
+/* === Horizontal Product Images at Bottom === */
+.products-landscape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+  padding: 30px 20px;
+  flex-wrap: wrap;
+  animation: slideUp 1s ease-out;
+}
+
+.products-landscape .product {
+  background-color: #fffbfb;
+  padding: 1rem;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(255, 255, 255);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.products-landscape .product:hover {
+  transform: scale(1.05);
+  background-color: #fff;
+}
+
+.products-landscape .product img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+/* Body with Background Image */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('Images/backk.webp'); /* Make sure the path is correct */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  transition: background-color 0.5s ease;
+  color: #fff;
+}
+
+
+header {
+  background-color: #111;
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.top-icons {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.top-icons span {
+  margin-left: 20px;
+  cursor: pointer;
+  color: white;
+  background: #222;
+  padding: 8px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px orange;
+}
+
+.banner {
+  position: relative;
+  background: url('https://cdn.wallpapersafari.com/58/27/YHg9QK.jpg') no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.banner-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.banner h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.banner p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.banner button {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  color: #ffa500;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ffa500;
+}
+
+
+
+/* Search Bar */
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  width: 260px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 10px 16px;
+  background-color: #ffa500;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #e69500;
+}
+
+
+
+.product {
+  display: block;
+  transition: all 0.3s ease;
+}
+
+
+  /* Mobile View */
+  @media (max-width: 600px) {
+    body {
+      padding-top: 55px;
+      font-size: 14px;
+    }
+
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .banner {
+      height: 200px;
+    }
+
+    .banner h1 {
+      font-size: 22px;
+    }
+
+    .banner p {
+      font-size: 14px;
+    }
+
+    .banner button {
+      font-size: 14px;
+      padding: 8px 14px;
+    }
+
+    .product-list {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
+
+    .product {
+      max-width: 90%;
+    }
+
+    .search-bar {
+      flex-direction: column;
+    }
+
+    .search-bar input[type="text"] {
+      width: 90%;
+    }
+
+    .search-bar button {
+      width: 90%;
+    }
+
+    .quantity-selector {
+      width: 100%;
+    }
+
+    .category-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      width: 90%;
+    }
+
+    footer {
+      font-size: 12px;
+    }
+  }
+
+      /* Global font color */
+      body {
+        color: #ffffff; /* White font for dark background */
+        background-color: #000000; /* Example dark background */
+        font-family: Arial, sans-serif;
+      }
+  
+      /* Headings */
+      h1, h2, h3 {
+        color: #ffa500; /* Orange */
+      }
+  
+      /* Paragraphs */
+      p {
+        color: #f0f0f0; /* Light gray */
+      }
+  
+      /* Links */
+      a {
+        color: #00ffff; /* Cyan */
+        text-decoration: none;
+      }
+  
+      a:hover {
+        color: #ff69b4; /* Hot pink on hover */
+      }
+  
+      /* Product names */
+      .product p {
+        color: #ffffff;
+      }
+  
+      /* Footer */
+      footer p {
+        color: #aaaaaa;
+      }

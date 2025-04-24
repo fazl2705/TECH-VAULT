@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="processors.html">Processors</a></li>
+        <li><a href="graphic-cards.html">Graphic Cards</a></li>
+        <li><a href="motherboards.html">Motherboards</a></li>
+        <li><a href="memory.html">Memory</a></li>
+        <li><a href="storage.html">Storage Devices</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="checkout.html">Checkout</a></li>
+        <li><a href="favourites.html">Favourites</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="product-list">
+      <h2>Memory</h2>
+
+      <div class="product">
+        <img src="Images/Corsair Vengeance LPX 16GB.jpg" alt="Corsair Vengeance LPX">
+        <p>Corsair Vengeance LPX 16GB</p>
+        <p class="price">$60</p>
+        <input type="number" id="quantity1" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Corsair Vengeance LPX 16GB', 60, 'quantity1')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Corsair Vengeance LPX 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/G.Skill Ripjaws V 16GB.png" alt="G.Skill Ripjaws V">
+        <p>G.Skill Ripjaws V 16GB</p>
+        <p class="price">$65</p>
+        <input type="number" id="quantity2" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('G.Skill Ripjaws V 16GB', 65, 'quantity2')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('G.Skill Ripjaws V 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Kingston Fury Beast 16GB.jpg" alt="Kingston Fury Beast">
+        <p>Kingston Fury Beast 16GB</p>
+        <p class="price">$55</p>
+        <input type="number" id="quantity3" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Kingston Fury Beast 16GB', 55, 'quantity3')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Kingston Fury Beast 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/TeamGroup T-Force Delta RGB 16GB.jpg" alt="TeamGroup T-Force Delta">
+        <p>TeamGroup T-Force Delta RGB 16GB</p>
+        <p class="price">$70</p>
+        <input type="number" id="quantity4" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('TeamGroup T-Force Delta RGB 16GB', 70, 'quantity4')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('TeamGroup T-Force Delta RGB 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/Patriot Viper Steel 16GB.webp" alt="Patriot Viper Steel">
+        <p>Patriot Viper Steel 16GB</p>
+        <p class="price">$50</p>
+        <input type="number" id="quantity5" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('Patriot Viper Steel 16GB', 50, 'quantity5')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('Patriot Viper Steel 16GB')">Add to Favourites</button>
+      </div>
+
+      <div class="product">
+        <img src="Images/ADATA XPG Gammix D30 16GB.jpg" alt="ADATA XPG Gammix D30">
+        <p>ADATA XPG Gammix D30 16GB</p>
+        <p class="price">$48</p>
+        <input type="number" id="quantity6" value="0" min="0" class="quantity-selector">
+        <button class="add-to-cart" onclick="addToCart('ADATA XPG Gammix D30 16GB', 48, 'quantity6')">Add to Cart</button>
+        <button class="add-to-favourites" onclick="addToFavourites('ADATA XPG Gammix D30 16GB')">Add to Favourites</button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Computer Parts Shop</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
